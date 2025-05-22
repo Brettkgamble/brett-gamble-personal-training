@@ -1,3 +1,4 @@
+/* eslint-disable prettier/prettier */
 import { assist } from "@sanity/assist";
 import { visionTool } from "@sanity/vision";
 import { defineConfig } from "sanity";
@@ -34,7 +35,7 @@ export default defineConfig({
         locations,
       },
       previewUrl: {
-        origin: presentationOriginUrl ?? "http://localhost:3000",
+        origin: presentationOriginUrl ?? "https://brett-gamble-personal-training-studio.vercel.app/",
         previewMode: {
           enable: "/api/presentation-draft",
         },
