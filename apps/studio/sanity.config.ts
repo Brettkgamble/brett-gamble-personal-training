@@ -16,12 +16,11 @@ import { locations } from "./location";
 import { presentationUrl } from "./plugins/presentation-url";
 import { schemaTypes } from "./schemaTypes";
 import { structure } from "./structure";
-import { createPageTemplate } from "./utils/helper";
+import { createPageTemplate, getPresentationUrl } from "./utils/helper";
 
 const projectId = process.env.SANITY_STUDIO_PROJECT_ID ?? "";
 const dataset = process.env.SANITY_STUDIO_DATASET;
 const title = process.env.SANITY_STUDIO_TITLE;
-const presentationOriginUrl = process.env.SANITY_STUDIO_PRESENTATION_URL;
 
 export default defineConfig({
   name: "default",
@@ -38,7 +37,7 @@ export default defineConfig({
         locations,
       },
       previewUrl: {
-        origin: presentationOriginUrl ?? "https://brett-gamble-personal-training-studio.vercel.app/",
+        origin: getPresentationUrl(),
         previewMode: {
           enable: "/api/presentation-draft",
         },
