@@ -1,3 +1,13 @@
+# Todo's
+- Continue updating front page
+- add phone number to call direct
+- add email form
+- About me page
+- testimonials
+- photos of studio
+- more photos of me
+- seo
+
 # Next.js Monorepo with Sanity CMS
 
 A modern, full-stack monorepo template built with Next.js App Router, Sanity CMS, Shadcn UI, and TurboRepo.
